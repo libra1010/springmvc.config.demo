@@ -27,9 +27,11 @@ public class HomeController {
     }
 
 
-    @RequestMapping(value="/get/{id}")
+
+    @RequestMapping(value={"get","get/{id}"})
     @ResponseBody
-    public User getUser(@PathVariable("id") Integer id){
+    public User getUser(@PathVariable(required = false) Integer id){
+        Integer i = null;
         User u =  userMapper.selectByPrimaryKey(1);
         return u;
     }
