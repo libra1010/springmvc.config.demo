@@ -17,16 +17,20 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/home")
 public class HomeController {
 
-
     @Autowired
     private IUserMapper userMapper = null;
+
 
     @RequestMapping("")
     public String index(){
         return "index";
     }
 
+    @RequestMapping("/test13")
+    public String test(){
 
+        return "index";
+    }
 
     @RequestMapping(value={"get","get/{id}"})
     @ResponseBody
