@@ -2,12 +2,14 @@
 
 #ide
 .idea/
+*.iml
 
 .out/
 .build/
 .gradle/
 build/
 logs/
+
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
