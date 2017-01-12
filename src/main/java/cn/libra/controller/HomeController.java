@@ -26,7 +26,7 @@ public class HomeController {
         return "index";
     }
 
-    @RequestMapping("/test13")
+    @RequestMapping("/test1")
     public String test(){
 
         return "index";
