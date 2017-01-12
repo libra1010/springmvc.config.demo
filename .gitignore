@@ -8,6 +8,7 @@
 .build/
 .gradle/
 build/
+out
 logs/
 
 
